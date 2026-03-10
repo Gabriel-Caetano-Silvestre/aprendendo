@@ -6,57 +6,50 @@
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-background:#f0f2f5;
-font-family:Arial;
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
+background:#f0f2f5;
+font-family:Arial;
 }
 
-.card{
-width:350px;
+.container{
+width:100%;
+max-width:900px;
 background:white;
-padding:20px;
+padding:40px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-text-align:center;
-}
-
-img{
-width:120px;
-border-radius:50%;
-margin-bottom:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
 h1{
-margin-bottom:10px;
+text-align:center;
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
 }
 
 ul{
 list-style:none;
-padding:0;
 }
 
 li{
+padding:10px;
+border-bottom:1px solid #ddd;
 display:flex;
 justify-content:space-between;
-padding:8px;
-border-bottom:1px solid #eee;
-}
-
-button{
-background:#ff6b00;
-color:white;
-border:none;
-padding:6px 10px;
-border-radius:5px;
-cursor:pointer;
-}
-
-button:hover{
-background:#e85d00;
 }
 
 </style>
@@ -64,27 +57,32 @@ background:#e85d00;
 
 <body>
 
-<div class="card">
-
-<img src="esfiha.jpg" alt="foto cardápio">
+<div class="container">
 
 <h1>Cardápio de Esfihas</h1>
 
+<div class="grid">
+
+<div>
 <h2>Salgadas</h2>
 <ul>
-<li>Carne <span>R$5,00 <button>Comprar</button></span></li>
-<li>Frango <span>R$5,00 <button>Comprar</button></span></li>
-<li>Calabresa <span>R$6,00 <button>Comprar</button></span></li>
-<li>Queijo <span>R$5,00 <button>Comprar</button></span></li>
-<li>Pizza <span>R$6,00 <button>Comprar</button></span></li>
+<li>Carne <span>R$5</span></li>
+<li>Frango <span>R$5</span></li>
+<li>Calabresa <span>R$6</span></li>
+<li>Queijo <span>R$5</span></li>
 </ul>
+</div>
 
+<div>
 <h2>Doces</h2>
 <ul>
-<li>Chocolate <span>R$6,00 <button>Comprar</button></span></li>
-<li>Doce de leite <span>R$6,00 <button>Comprar</button></span></li>
-<li>Banana com canela <span>R$6,00 <button>Comprar</button></span></li>
+<li>Chocolate <span>R$6</span></li>
+<li>Doce de leite <span>R$6</span></li>
+<li>Banana com canela <span>R$6</span></li>
 </ul>
+</div>
+
+</div>
 
 </div>
 
