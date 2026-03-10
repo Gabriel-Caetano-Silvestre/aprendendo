@@ -5,55 +5,88 @@
 <title>Cardápio</title>
 
 <style>
+
 body{
-background-color:#f0f2f5;
-color:black;
-font-family:arial;
-text-align:center;
-margin-top:100px;
+background:#f0f2f5;
+font-family:Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
 }
+
 .card{
-width:320px;
-padding:20px;
+width:350px;
 background:white;
-margin:auto;
+padding:20px;
 border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+text-align:center;
 }
+
 img{
+width:120px;
 border-radius:50%;
-width:200px;
+margin-bottom:10px;
 }
+
+h1{
+margin-bottom:10px;
+}
+
 ul{
-text align:left;
-display:inline-block;
+list-style:none;
+padding:0;
+}
+
+li{
+display:flex;
+justify-content:space-between;
+padding:8px;
+border-bottom:1px solid #eee;
+}
+
+button{
+background:#ff6b00;
+color:white;
+border:none;
+padding:6px 10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e85d00;
 }
 
 </style>
-
 </head>
-  
+
 <body>
 
 <div class="card">
+
 <img src="esfiha.jpg" alt="foto cardápio">
+
 <h1>Cardápio de Esfihas</h1>
+
 <h2>Salgadas</h2>
 <ul>
-<li>Carne — R$ 5,00</li>
-<li>Frango — R$ 5,00</li>
-<li>Calabresa — R$ 6,00</li>
-<li>Queijo — R$ 5,00</li>
-<li>Pizza — R$ 6,00</li>
+<li>Carne <span>R$5,00 <button>Comprar</button></span></li>
+<li>Frango <span>R$5,00 <button>Comprar</button></span></li>
+<li>Calabresa <span>R$6,00 <button>Comprar</button></span></li>
+<li>Queijo <span>R$5,00 <button>Comprar</button></span></li>
+<li>Pizza <span>R$6,00 <button>Comprar</button></span></li>
 </ul>
+
 <h2>Doces</h2>
 <ul>
-<li>Chocolate — R$ 6,00</li>
-<li>Doce de leite — R$ 6,00</li>
-<li>Banana com canela — R$ 6,00</li>
+<li>Chocolate <span>R$6,00 <button>Comprar</button></span></li>
+<li>Doce de leite <span>R$6,00 <button>Comprar</button></span></li>
+<li>Banana com canela <span>R$6,00 <button>Comprar</button></span></li>
 </ul>
 
 </div>
 
 </body>
-
 </html>
